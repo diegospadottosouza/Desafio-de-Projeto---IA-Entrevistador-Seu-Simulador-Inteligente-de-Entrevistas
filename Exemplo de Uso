@@ -1,0 +1,10 @@
+Usuário escolhe área: Backend  
+
+Pergunta gerada:
+Explique como funciona o gerenciamento de memória em Java.
+
+Usuário responde:
+O Java utiliza Garbage Collector para liberar memória automaticamente.
+
+Feedback da IA:
+Boa resposta! Você mencionou o Garbage Collector, mas poderia detalhar como ele identifica objetos não utilizados.
