@@ -1,0 +1,12 @@
+IA-Entrevistador/
+│
+├── README.md
+├── src/
+│   ├── entrevistador.py
+│   └── avaliador.py
+├── data/
+│   └── perguntas.json
+├── docs/
+│   └── guia_instalacao.md
+├── requirements.txt
+└── .gitignore
