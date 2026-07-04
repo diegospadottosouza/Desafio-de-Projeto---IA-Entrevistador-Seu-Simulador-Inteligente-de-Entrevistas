@@ -1,0 +1,28 @@
+
+---
+
+## 🧑‍💻 Código Base (`src/entrevistador.py`)
+
+```python
+import streamlit as st
+import random
+import json
+
+# Carregar perguntas
+with open("data/perguntas.json", "r", encoding="utf-8") as f:
+    perguntas = json.load(f)
+
+def gerar_pergunta(area):
+    return random.choice(perguntas.get(area, ["Nenhuma pergunta disponível."]))
+
+st.title("🎤 IA Entrevistador")
+st.write("Simule entrevistas técnicas e receba feedback inteligente!")
+
+area = st.selectbox("Escolha a área:", ["Backend", "Frontend", "Data Science", "IA"])
+if st.button("Gerar Pergunta"):
+    pergunta = gerar_pergunta(area)
+    st.info(pergunta)
+
+resposta = st.text_area("Digite sua resposta:")
+if resposta:
+    st.success("Resposta registrada! A IA irá avaliar e fornecer feedback.")
